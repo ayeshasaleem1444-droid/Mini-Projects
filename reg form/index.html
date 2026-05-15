@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create an Account</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <form action="#" method="POST">
+        <h2>Create Account</h2>
+        <p>Join our community today!</p>
+
+        <div class="input-group">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+            placeholder="Enter username"
+            required
+          />
+          <span id="username-error" style="color: red; font-size: 12px"></span>
+        </div>
+
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="you@example.com"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            placeholder="••••••••"
+            required
+          />
+          <span id="len-error" style="color: red; font-size: 12px"></span>
+        </div>
+
+        <div class="input-group">
+          <label for="confirm-password">Confirm Password</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            required
+            placeholder="••••••••"
+            required
+          />
+          <span id="match-error" style="color: red; font-size: 12px"></span>
+        </div>
+        <div class="terms">
+          <input type="checkbox" name="terms" id="terms" />
+          <label for="terms">I agree to terms and conditions.</label>
+        </div>
+
+        <button type="submit" class="register-btn">Sign Up</button>
+
+        <p class="footer-text">
+          Already have an account? <a href="#">Log in</a>
+        </p>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
