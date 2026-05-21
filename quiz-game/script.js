@@ -131,7 +131,7 @@ function startquiz() {
   currentQindex = 0;
   score = 0;
   scorenumber.textContent = 0;
-
+  progress.style.width = "0%";
   firstscreen.classList.remove("active");
   quizscreen.classList.add("active");
 
@@ -206,6 +206,8 @@ function showresult() {
 function restartquiz() {
   currentQindex = 0;
   score = 0;
+  scorenumber.textContent = 0;
+  progress.style.width = "0%";
   resultscreen.classList.remove("active");
   quizscreen.classList.add("active");
   scorenumber.textContent = 0;
