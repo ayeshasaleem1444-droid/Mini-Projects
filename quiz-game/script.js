@@ -194,11 +194,11 @@ function showresult() {
   if (percentage === 100) {
     comment.textContent = "You really know me.";
   } else if (percentage >= 80) {
-    comment.textContent = "how the hell did you get wrong on 1 question huh??";
+    comment.textContent = "How the hell did you get that 1 question wrong,huh?";
   } else if (percentage >= 60) {
     comment.textContent = "You disappointed me bro!!!";
   } else if (percentage >= 40) {
-    comment.textContent = "You do not me at all bro!!!";
+    comment.textContent = "You do not know me at all bro!!!";
   } else {
     comment.textContent = "What the hell bro!!!";
   }
