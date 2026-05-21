@@ -115,21 +115,31 @@ body {
 }
 
 /* result screen */
+#result-screen {
+  text-align: center;
+  padding: 2rem;
+}
+
 #result-screen h1 {
   color: red;
   margin-bottom: 20px;
-  font-weight: bold;
+  font-size: 2rem;
 }
 .result-div p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: rgb(72, 69, 68);
-  margin-bottom: 1rem;
+  margin-bottom: 15px;
 }
+
 #comment {
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: red;
   margin-bottom: 16px;
+  line-height: 1.4;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  padding: 0 5px;
 }
 .result-div {
   background-color: #f5efe6;
@@ -149,4 +159,13 @@ body {
 #restart:hover {
   background-color: #b20710;
   cursor: pointer;
+}
+@media (max-width: 480px) {
+  #comment {
+    font-size: 1rem; /* Even smaller on phones */
+  }
+
+  .result-div {
+    padding: 15px; /* Less padding on mobile */
+  }
 }
