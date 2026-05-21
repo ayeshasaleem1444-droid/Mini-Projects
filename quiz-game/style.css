@@ -103,6 +103,9 @@ body {
   border-radius: 5px;
   overflow: hidden;
   margin-top: 20px;
+  display: block;
+  width: 100%;
+  position: relative;
 }
 #progress {
   height: 100%;
