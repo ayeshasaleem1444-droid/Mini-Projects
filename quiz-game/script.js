@@ -128,7 +128,7 @@ let answerDisabled = false;
 startbtn.addEventListener("click", startquiz);
 restartbtn.addEventListener("click", restartquiz);
 function startquiz() {
-  const questionnumber = 0;
+  currentQindex = 0;
   score = 0;
   scorenumber.textContent = 0;
 
@@ -204,6 +204,10 @@ function showresult() {
   }
 }
 function restartquiz() {
+  currentQindex = 0;
+  score = 0;
   resultscreen.classList.remove("active");
-  startquiz();
+  quizscreen.classList.add("active");
+  scorenumber.textContent = 0;
+  showquestion();
 }
