@@ -3,34 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>to do list</title>
+    <title>To-Do List</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <!-- main heading -->
       <h1>My Tasks</h1>
-      <!-- input -->
-      <div class="inp">
-        <input type="text" placeholder=" Add a new task..." />
-        <button onclick="addTask()">+ Add</button>
+
+      <div class="inp-group">
+        <input type="text" id="taskInput" placeholder="Add a new task..." />
+        <button id="addTaskBtn">+ Add</button>
       </div>
-      <!-- counts -->
+
       <div class="counts">
-        <div class="three-divs" id="total">0 Total</div>
-        <div class="three-divs" id="done">0 Done</div>
-        <div class="three-divs" id="remaining">0 Remaining</div>
+        <div class="stat-box" id="totalCount">0 Total</div>
+        <div class="stat-box" id="doneCount">0 Done</div>
+        <div class="stat-box" id="remainingCount">0 Remaining</div>
       </div>
-      <!-- buttons -->
-      <div class="three-buttons">
-        <button onclick="all()" id="all" class="button">All</button>
-        <button onclick="active()" id="active" class="button">Active</button>
-        <button onclick="Done()" id="done" class="button">Done</button>
+
+      <div class="filter-buttons">
+        <button id="filterAll" class="btn active">All</button>
+        <button id="filterActive" class="btn">Active</button>
+        <button id="filterDone" class="btn">Done</button>
       </div>
-      <!-- tasks -->
-      <div class="tasks">no tasks are there</div>
-      <!-- delete tasks -->
-      <div id="delete">
+
+      <div class="tasks-container" id="tasksList">
+        <div class="empty-state">No tasks available</div>
+      </div>
+
+      <div id="clearCompletedBtn" class="clear-btn">
         <svg
           class="trash-icon"
           xmlns="http://www.w3.org/2000/svg"
@@ -53,5 +54,6 @@
         Clear completed
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
