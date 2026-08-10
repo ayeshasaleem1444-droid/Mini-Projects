@@ -1,30 +1,17 @@
-// ==========================================
-// 1. DOM Elements Selection
-// ==========================================
+// element selection
 const taskInput = document.getElementById("taskInput");
 const addTaskBtn = document.getElementById("addTaskBtn");
 const tasksList = document.getElementById("tasksList");
 const clearCompletedBtn = document.getElementById("clearCompletedBtn");
-
-// Counter Elements
 const totalCount = document.getElementById("totalCount");
 const doneCount = document.getElementById("doneCount");
 const remainingCount = document.getElementById("remainingCount");
-
-// Filter Button Elements
 const filterAll = document.getElementById("filterAll");
 const filterActive = document.getElementById("filterActive");
 const filterDone = document.getElementById("filterDone");
-
-// ==========================================
 // 2. State Variables
-// ==========================================
 let tasks = [];
 let currentFilter = "all"; // Options: 'all', 'active', 'done'
-
-// ==========================================
-// 3. Core Functions
-// ==========================================
 
 // Function to add a new task
 function addTask() {
