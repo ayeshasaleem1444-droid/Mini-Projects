@@ -1,0 +1,342 @@
+/* ============================================================
+   SAFEX UI COMPONENTS
+   Consistent spacing & typography using CSS variables
+   ============================================================ */
+
+/* ----- CSS VARIABLES (Design Tokens) ----- */
+:root {
+  /* ===== COLORS ===== */
+  /* Brand Colors */
+  --sx-blue: #0a4b7a;
+  --sx-blue-dark: #063150;
+  --sx-blue-light: #e6f0fa;
+  --sx-green: #2b7a62;
+  --sx-orange: #d97706;
+  --sx-red: #b91c1c;
+
+  /* Neutrals */
+  --sx-white: #ffffff;
+  --sx-gray-100: #f1f5f9;
+  --sx-gray-200: #e2e8f0;
+  --sx-gray-300: #cbd5e1;
+  --sx-gray-500: #64748b;
+  --sx-gray-700: #334155;
+  --sx-gray-900: #0f172a;
+
+  /* ===== TYPOGRAPHY ===== */
+  /* Font Family */
+  --sx-font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+
+  /* Font Sizes (scale) */
+  --sx-text-xs: 0.75rem; /* 12px */
+  --sx-text-sm: 0.875rem; /* 14px */
+  --sx-text-base: 1rem; /* 16px */
+  --sx-text-lg: 1.125rem; /* 18px */
+  --sx-text-xl: 1.25rem; /* 20px */
+  --sx-text-2xl: 1.5rem; /* 24px */
+  --sx-text-3xl: 1.875rem; /* 30px */
+
+  /* Font Weights */
+  --sx-font-normal: 400;
+  --sx-font-medium: 500;
+  --sx-font-semibold: 600;
+  --sx-font-bold: 700;
+
+  /* ===== SPACING (scale) ===== */
+  --sx-space-1: 0.25rem; /* 4px */
+  --sx-space-2: 0.5rem; /* 8px */
+  --sx-space-3: 0.75rem; /* 12px */
+  --sx-space-4: 1rem; /* 16px */
+  --sx-space-5: 1.25rem; /* 20px */
+  --sx-space-6: 1.5rem; /* 24px */
+  --sx-space-8: 2rem; /* 32px */
+  --sx-space-10: 2.5rem; /* 40px */
+  --sx-space-12: 3rem; /* 48px */
+  --sx-space-16: 4rem; /* 64px */
+
+  /* ===== BORDERS & RADIUS ===== */
+  --sx-radius-sm: 0.25rem; /* 4px */
+  --sx-radius: 0.5rem; /* 8px */
+  --sx-radius-lg: 0.75rem; /* 12px */
+  --sx-radius-full: 9999px;
+
+  /* Border Width */
+  --sx-border-width: 1px;
+  --sx-border-color: var(--sx-gray-200);
+
+  /* ===== SHADOWS ===== */
+  --sx-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --sx-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+  --sx-shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+  --sx-shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+
+  /* ===== TRANSITIONS ===== */
+  --sx-transition-fast: 0.15s ease;
+  --sx-transition: 0.3s ease;
+  --sx-transition-slow: 0.5s ease;
+
+  /* ===== CONTAINER WIDTH ===== */
+  --sx-container: 1280px;
+  --sx-container-sm: 640px;
+  --sx-container-md: 768px;
+}
+
+/* ----- RESET ----- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--sx-font-family);
+  font-size: var(--sx-text-base);
+  font-weight: var(--sx-font-normal);
+  line-height: 1.6;
+  color: var(--sx-gray-900);
+  background: var(--sx-gray-100);
+  padding: var(--sx-space-6);
+}
+
+/* ============================================================
+   1. BUTTONS
+   ============================================================ */
+.btn {
+  display: inline-block;
+  padding: var(--sx-space-3) var(--sx-space-5);
+  font-family: var(--sx-font-family);
+  font-size: var(--sx-text-base);
+  font-weight: var(--sx-font-semibold);
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  border-radius: var(--sx-radius);
+  border: var(--sx-border-width) solid transparent;
+  cursor: pointer;
+  transition: all var(--sx-transition-fast);
+  background: transparent;
+  color: var(--sx-gray-700);
+}
+
+/* Button Variants */
+.btn-primary {
+  background: var(--sx-blue);
+  color: var(--sx-white);
+  border-color: var(--sx-blue);
+}
+.btn-primary:hover {
+  background: var(--sx-blue-dark);
+  border-color: var(--sx-blue-dark);
+}
+
+.btn-secondary {
+  background: var(--sx-green);
+  color: var(--sx-white);
+  border-color: var(--sx-green);
+}
+.btn-secondary:hover {
+  background: #1f5e4b;
+  border-color: #1f5e4b;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--sx-blue);
+  border-color: var(--sx-blue);
+}
+.btn-outline:hover {
+  background: var(--sx-blue-light);
+}
+
+.btn-ghost {
+  background: var(--sx-gray-100);
+  color: var(--sx-gray-700);
+  border-color: transparent;
+}
+.btn-ghost:hover {
+  background: var(--sx-gray-200);
+}
+
+/* Button Sizes */
+.btn-sm {
+  padding: var(--sx-space-2) var(--sx-space-4);
+  font-size: var(--sx-text-sm);
+}
+.btn-lg {
+  padding: var(--sx-space-4) var(--sx-space-8);
+  font-size: var(--sx-text-lg);
+}
+
+/* ============================================================
+   2. CARD
+   ============================================================ */
+.card {
+  background: var(--sx-white);
+  border-radius: var(--sx-radius);
+  border: var(--sx-border-width) solid var(--sx-border-color);
+  box-shadow: var(--sx-shadow);
+  padding: var(--sx-space-6);
+  max-width: 320px;
+  width: 100%;
+  transition: box-shadow var(--sx-transition-fast);
+}
+.card:hover {
+  box-shadow: var(--sx-shadow-md);
+}
+
+.card-title {
+  font-size: var(--sx-text-xl);
+  font-weight: var(--sx-font-bold);
+  margin-bottom: var(--sx-space-2);
+  color: var(--sx-gray-900);
+  line-height: 1.3;
+}
+
+.card-text {
+  font-size: var(--sx-text-base);
+  color: var(--sx-gray-500);
+  margin-bottom: var(--sx-space-4);
+  line-height: 1.6;
+}
+
+.card-footer {
+  border-top: var(--sx-border-width) solid var(--sx-gray-100);
+  padding-top: var(--sx-space-4);
+  margin-top: var(--sx-space-2);
+  display: flex;
+  gap: var(--sx-space-3);
+  flex-wrap: wrap;
+}
+
+/* ============================================================
+   3. NAVBAR
+   ============================================================ */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--sx-space-4) var(--sx-space-6);
+  background: var(--sx-white);
+  border-bottom: var(--sx-border-width) solid var(--sx-border-color);
+  box-shadow: var(--sx-shadow-sm);
+}
+
+.navbar-brand {
+  font-size: var(--sx-text-xl);
+  font-weight: var(--sx-font-bold);
+  color: var(--sx-blue);
+  text-decoration: none;
+  line-height: 1.3;
+}
+
+.navbar-links {
+  display: flex;
+  gap: var(--sx-space-6);
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar-links a {
+  color: var(--sx-gray-700);
+  text-decoration: none;
+  font-weight: var(--sx-font-medium);
+  font-size: var(--sx-text-base);
+  transition: color var(--sx-transition-fast);
+}
+.navbar-links a:hover {
+  color: var(--sx-blue);
+}
+
+/* ============================================================
+   4. ALERT BANNERS
+   ============================================================ */
+.alert {
+  padding: var(--sx-space-4) var(--sx-space-6);
+  border-radius: var(--sx-radius);
+  border-left: 5px solid var(--sx-blue);
+  background: var(--sx-blue-light);
+  color: var(--sx-gray-900);
+  display: flex;
+  align-items: center;
+  gap: var(--sx-space-3);
+  max-width: 600px;
+  width: 100%;
+  font-size: var(--sx-text-base);
+  line-height: 1.5;
+}
+
+.alert-icon {
+  font-size: var(--sx-text-xl);
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.alert-message {
+  flex: 1;
+}
+
+.alert-dismiss {
+  background: none;
+  border: none;
+  font-size: var(--sx-text-xl);
+  cursor: pointer;
+  color: var(--sx-gray-500);
+  padding: 0 var(--sx-space-2);
+  line-height: 1;
+  transition: color var(--sx-transition-fast);
+}
+.alert-dismiss:hover {
+  color: var(--sx-gray-900);
+}
+
+/* Alert Variants */
+.alert-success {
+  border-left-color: var(--sx-green);
+  background: #e6f5f0;
+}
+.alert-warning {
+  border-left-color: var(--sx-orange);
+  background: #fef3e2;
+}
+.alert-danger {
+  border-left-color: var(--sx-red);
+  background: #fde8e8;
+}
+
+/* ============================================================
+   5. FOOTER
+   ============================================================ */
+.footer {
+  background: var(--sx-white);
+  border-top: var(--sx-border-width) solid var(--sx-border-color);
+  padding: var(--sx-space-8) var(--sx-space-6);
+  color: var(--sx-gray-500);
+  font-size: var(--sx-text-sm);
+  line-height: 1.5;
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--sx-space-4);
+  max-width: var(--sx-container);
+  margin: 0 auto;
+}
+
+.footer-links {
+  display: flex;
+  gap: var(--sx-space-6);
+}
+
+.footer-links a {
+  color: var(--sx-gray-500);
+  text-decoration: none;
+  font-size: var(--sx-text-sm);
+  transition: color var(--sx-transition-fast);
+}
+.footer-links a:hover {
+  color: var(--sx-blue);
+}

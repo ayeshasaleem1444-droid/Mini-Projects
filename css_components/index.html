@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SafeX UI Components</title>
+    <link rel="stylesheet" href="safx-components.css" />
+
+    <style>
+      /* Demo page styles only (not part of component library) */
+      body {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+        font-family: var(--sx-font-family);
+        background: var(--sx-gray-100);
+      }
+
+      .component-demo {
+        background: var(--sx-white);
+        border-radius: var(--sx-radius);
+        padding: var(--sx-space-6);
+        margin: var(--sx-space-4) 0;
+        border: 1px solid var(--sx-gray-200);
+      }
+
+      .component-demo h3 {
+        margin-bottom: var(--sx-space-4);
+        color: var(--sx-blue);
+      }
+
+      .demo-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--sx-space-4);
+        align-items: center;
+        margin-bottom: var(--sx-space-4);
+      }
+
+      .demo-row label {
+        font-weight: var(--sx-font-semibold);
+        min-width: 100px;
+        color: var(--sx-gray-700);
+      }
+
+      hr {
+        margin: var(--sx-space-8) 0;
+        border: none;
+        border-top: 2px solid var(--sx-gray-200);
+      }
+
+      h1 {
+        color: var(--sx-blue);
+      }
+
+      h2 {
+        color: var(--sx-gray-900);
+        border-bottom: 3px solid var(--sx-blue);
+        padding-bottom: var(--sx-space-2);
+        margin-top: var(--sx-space-8);
+      }
+
+      .card-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--sx-space-6);
+      }
+
+      .alert + .alert {
+        margin-top: var(--sx-space-4);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🎨 SafeX UI Components</h1>
+    <p>Demo page showing every component and all their variants.</p>
+
+    <hr />
+
+    <!-- ============================================================
+         COMPONENT 1: NAVBAR
+         ============================================================ -->
+    <h2>1. Navbar</h2>
+
+    <div class="component-demo">
+      <h3>Default Navbar</h3>
+      <nav class="navbar">
+        <a href="#" class="navbar-brand">SafeX</a>
+        <div class="navbar-links">
+          <a href="#">Home</a>
+          <a href="#">Products</a>
+          <a href="#">About</a>
+          <a href="#" class="btn btn-primary btn-sm">Sign In</a>
+        </div>
+      </nav>
+    </div>
+
+    <hr />
+
+    <!-- ============================================================
+         COMPONENT 2: BUTTONS - ALL VARIANTS
+         ============================================================ -->
+    <h2>2. Buttons</h2>
+
+    <div class="component-demo">
+      <h3>Button Variants</h3>
+
+      <div class="demo-row">
+        <label>Primary:</label>
+        <button class="btn btn-primary">Primary</button>
+      </div>
+
+      <div class="demo-row">
+        <label>Secondary:</label>
+        <button class="btn btn-secondary">Secondary</button>
+      </div>
+
+      <div class="demo-row">
+        <label>Outline:</label>
+        <button class="btn btn-outline">Outline</button>
+      </div>
+
+      <div class="demo-row">
+        <label>Ghost:</label>
+        <button class="btn btn-ghost">Ghost</button>
+      </div>
+    </div>
+
+    <div class="component-demo">
+      <h3>Button Sizes</h3>
+
+      <div class="demo-row">
+        <label>Small:</label>
+        <button class="btn btn-primary btn-sm">Small</button>
+        <button class="btn btn-secondary btn-sm">Small</button>
+        <button class="btn btn-outline btn-sm">Small</button>
+      </div>
+
+      <div class="demo-row">
+        <label>Default:</label>
+        <button class="btn btn-primary">Default</button>
+        <button class="btn btn-secondary">Default</button>
+        <button class="btn btn-outline">Default</button>
+      </div>
+
+      <div class="demo-row">
+        <label>Large:</label>
+        <button class="btn btn-primary btn-lg">Large</button>
+        <button class="btn btn-secondary btn-lg">Large</button>
+        <button class="btn btn-outline btn-lg">Large</button>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- ============================================================
+         COMPONENT 3: CARDS - ALL VARIANTS
+         ============================================================ -->
+    <h2>3. Cards</h2>
+
+    <div class="component-demo">
+      <h3>Card Variants</h3>
+
+      <div class="card-group">
+        <!-- Card 1: Primary -->
+        <div>
+          <p>
+            <strong>Card Primary</strong>
+            <code
+              style="
+                background: var(--sx-gray-100);
+                padding: 2px 6px;
+                border-radius: 4px;
+              "
+              >.card-primary</code
+            >
+          </p>
+          <div class="card card-primary">
+            <div class="card-title">Security Shield</div>
+            <div class="card-text">
+              Enterprise-grade encryption and monitoring.
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary btn-sm">Learn More</button>
+              <button class="btn btn-outline btn-sm">Docs</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Secondary -->
+        <div>
+          <p>
+            <strong>Card Secondary</strong>
+            <code
+              style="
+                background: var(--sx-gray-100);
+                padding: 2px 6px;
+                border-radius: 4px;
+              "
+              >.card-secondary</code
+            >
+          </p>
+          <div class="card card-secondary">
+            <div class="card-title">Compliance</div>
+            <div class="card-text">
+              Automated audits and policy enforcement.
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-secondary btn-sm">Get Started</button>
+              <button class="btn btn-ghost btn-sm">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Accent -->
+        <div>
+          <p>
+            <strong>Card Accent</strong>
+            <code
+              style="
+                background: var(--sx-gray-100);
+                padding: 2px 6px;
+                border-radius: 4px;
+              "
+              >.card-accent</code
+            >
+          </p>
+          <div class="card card-accent">
+            <div class="card-title">Analytics</div>
+            <div class="card-text">
+              Visualize security metrics in real-time.
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-outline btn-sm">Dashboard</button>
+              <button class="btn btn-ghost btn-sm">Reports</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- ============================================================
+         COMPONENT 4: ALERT BANNERS - ALL VARIANTS
+         ============================================================ -->
+    <h2>4. Alert Banners</h2>
+
+    <div class="component-demo">
+      <h3>Alert Variants</h3>
+
+      <!-- Info Alert -->
+      <div class="alert">
+        <span class="alert-icon">ℹ️</span>
+        <span class="alert-message"
+          ><strong>Info:</strong> System update tonight at 10 PM.</span
+        >
+        <button class="alert-dismiss">✕</button>
+      </div>
+
+      <!-- Success Alert -->
+      <div class="alert alert-success">
+        <span class="alert-icon">✅</span>
+        <span class="alert-message"
+          ><strong>Success:</strong> Profile updated successfully!</span
+        >
+        <button class="alert-dismiss">✕</button>
+      </div>
+
+      <!-- Warning Alert -->
+      <div class="alert alert-warning">
+        <span class="alert-icon">⚠️</span>
+        <span class="alert-message"
+          ><strong>Warning:</strong> Your session will expire in 5
+          minutes.</span
+        >
+        <button class="alert-dismiss">✕</button>
+      </div>
+
+      <!-- Danger Alert -->
+      <div class="alert alert-danger">
+        <span class="alert-icon">🚨</span>
+        <span class="alert-message"
+          ><strong>Danger:</strong> Could not connect to the server.</span
+        >
+        <button class="alert-dismiss">✕</button>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- ============================================================
+         COMPONENT 5: FOOTER
+         ============================================================ -->
+    <h2>5. Footer</h2>
+
+    <div class="component-demo">
+      <h3>Default Footer</h3>
+      <footer class="footer">
+        <div class="footer-inner">
+          <span>© 2026 SafeX. All rights reserved.</span>
+          <div class="footer-links">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Support</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
