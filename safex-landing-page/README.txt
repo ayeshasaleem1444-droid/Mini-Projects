@@ -8,7 +8,7 @@ This is a professional landing page for **SafeX Security Solutions**, a cybersec
 
 ## Live Demo
 
-🔗 **View the live page:** [https://safex-security.netlify.app](https://safex-security.netlify.app)
+🔗 **View the live page:** [https://spectacular-caramel-064a4f.netlify.app](https://spectacular-caramel-064a4f.netlify.app)
 
 ## Services Featured
 
