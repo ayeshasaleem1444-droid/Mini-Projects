@@ -28,7 +28,7 @@ This is a professional landing page for **SafeX Security Solutions**, a cybersec
 
 This landing page is deployed on:
 - **Netlify:** [https://safex-security.netlify.app](https://safex-security.netlify.app)
-- **GitHub Pages:** [https://YOUR_USERNAME.github.io/safeX-landing-page](https://YOUR_USERNAME.github.io/safeX-landing-page)
+- **GitHub Pages:** [https://github.com/ayeshasaleem1444-droid/Mini-Projects/tree/main/safex-landing-page]
 
 ## About SafeX
 
