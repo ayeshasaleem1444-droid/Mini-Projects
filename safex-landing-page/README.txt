@@ -1,32 +1,54 @@
-Massively by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+# SafeX Security Solutions - Landing Page
 
+![SafeX Security](images/pic01.jpg)
 
-This is Massively, a text-heavy, article-oriented design built around a huge background
-image (with a new parallax implementation I'm testing) and scroll effects (powered by
-Scrollex). A *slight* departure from all the one-pagers I've been doing lately, but one
-that fulfills a few user requests and makes use of some new techniques I've been wanting
-to try out. Enjoy it :)
+## Overview
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+This is a professional landing page for **SafeX Security Solutions**, a cybersecurity company offering comprehensive security services for businesses. The page showcases SafeX's core services including Vulnerability Assessment, Penetration Testing, SOC-as-a-Service, and AI Security Automation.
 
-(* = not included)
+## Live Demo
 
-AJ
-aj@lkn.io | @ajlkn
+🔗 **View the live page:** [https://safex-security.netlify.app](https://safex-security.netlify.app)
 
+## Services Featured
 
-Credits:
+- **Vulnerability Assessment** - Identify security gaps in systems, networks, and applications
+- **Penetration Testing** - Simulate real-world cyber attacks to test defenses
+- **SOC-as-a-Service** - 24/7 security monitoring and threat detection
+- **AI Security Automation** - AI-powered threat detection and response
 
-	Demo Images:
-		Unsplash (unsplash.com)
+## Technologies Used
 
-	Icons:
-		Font Awesome (fontawesome.io)
+- HTML5
+- CSS3
+- JavaScript
+- [Massively Template](https://html5up.net/massively) by HTML5 UP
 
-	Other:
-		jQuery (jquery.com)
-		Scrollex (github.com/ajlkn/jquery.scrollex)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+## Deployment
+
+This landing page is deployed on:
+- **Netlify:** [https://safex-security.netlify.app](https://safex-security.netlify.app)
+- **GitHub Pages:** [https://YOUR_USERNAME.github.io/safeX-landing-page](https://YOUR_USERNAME.github.io/safeX-landing-page)
+
+## About SafeX
+
+SafeX provides enterprise-grade security solutions tailored for small and medium businesses. Their services help organizations:
+
+- Identify vulnerabilities before attackers exploit them
+- Test security defenses through controlled penetration testing
+- Monitor systems 24/7 for threats
+- Automate security responses using AI technology
+
+## Credits
+
+- **Design:** [HTML5 UP](https://html5up.net) | [@ajlkn](https://twitter.com/ajlkn)
+- **Icons:** [Font Awesome](https://fontawesome.io)
+- **Images:** [Unsplash](https://unsplash.com)
+
+## License
+
+This project is free for personal and commercial use under the [CCA 3.0 license](https://html5up.net/license).
+
+---
+
+**Built with ❤️ for SafeX Security Solutions**
